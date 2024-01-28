@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: customers
+    description: "test make view from dbt dataset"
+    columns:
+      - name: customer_id
+        description: "customer_id_description"
+        tests:
+          - unique
+          - not_null
