@@ -37,3 +37,6 @@ models:
       +materialized: view
     customer:
       +materialized: view
+
+on-run-start:
+  - '{{addAtoCustomerId(customer_id)}}'
